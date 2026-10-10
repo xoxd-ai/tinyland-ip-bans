@@ -1,7 +1,8 @@
 {
   "name": "@tummycrypt/tinyland-ip-bans",
   "version": "0.2.2",
-  "description": "Flat-file IP ban management with CRUD operations and expiry support",
+  "private": true,
+  "description": "RETIRED: merged into @tummycrypt/tinyland-security 1.0.0 as the ./ip-bans subpath export",
   "type": "module",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
@@ -20,7 +21,6 @@
     "build": "tsc",
     "dev": "tsc --watch",
     "clean": "rm -rf dist",
-    "prepublishOnly": "pnpm build && pnpm check:package",
     "test": "vitest run",
     "test:coverage": "vitest --coverage",
     "typecheck": "tsc --noEmit",
@@ -41,10 +41,6 @@
   },
   "engines": {
     "node": ">=22.0.0"
-  },
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/",
-    "access": "public"
   },
   "packageManager": "pnpm@10.13.1",
   "homepage": "https://github.com/tinyland-inc/tinyland-ip-bans",
